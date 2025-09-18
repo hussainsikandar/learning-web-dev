@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>List Your Resturant</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="java/java.js" defer></script>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="https://partner.foodpanda.pk/en" target="_blank" rel="noopener noreferrer">
+        <img src="/logo.svg" alt="logo" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="https://magazine.foodpanda.pk/" target="_blank" rel="noopener noreferrer">Resources</a></li>
+      <li><a href="https://partner.foodpanda.com/login" target="_blank" rel="noopener noreferrer">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="image-container">
+    <img src="bd-image.png" alt="Background" class="background-img" />
+
+    <div class="overlay-text">
+      <!-- Left Content -->
+      <div class="overlay-left">
+        <h1>Register your restaurant with us!</h1>
+        <p>Sign up easily, showcase your menu, and you can start reaching new customers</p>
+
+        <!-- Form -->
+        <form action="/submit.php" method="POST" class="register-form">
+          <h2>Ready to boost your sales?</h2>
+
+          <label for="business-name">Your Business Name</label>
+          <input type="text" id="business-name" name="business_name" placeholder="Your Business Name" required>
+
+          <label for="cnic-first-middle">First and Middle Name (as per CNIC)</label>
+          <input type="text" id="cnic-first-middle" name="cnic_first_middle" placeholder="First and Middle Name" required>
+
+          <label for="cnic-last-name">Last Name (as per CNIC)</label>
+          <input type="text" id="cnic-last-name" name="cnic_last_name" placeholder="Last Name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="business-type">Business Type</label>
+          <input type="text" id="business-type" name="business_type" placeholder="Business Type" required>
+
+          <label for="mobile-number">Mobile Number</label>
+          <input type="tel" id="mobile-number" name="mobile_number" placeholder="+92 XXXXX XXXXX" required>
+
+          <button type="submit">Get Started</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
